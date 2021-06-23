@@ -135,6 +135,7 @@ function lostgame() {
     }
     shwmsg.innerHTML="You Lost !!!!";
     msggame.style.display = "inline";
+    playMusic();
 }
 
 
@@ -183,3 +184,8 @@ function switchobj() {
 }
 
 canvas.addEventListener("click", switchobj, false);
+
+function playMusic(){
+    var music = new Audio('fail-buzzer-02.mp3');
+    music.play();
+    }
